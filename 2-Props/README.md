@@ -1,8 +1,18 @@
-# React + Vite
+# React Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository provides a simple explanation of React props and how to use them effectively in your React applications.
 
-Currently, two official plugins are available:
+## What are Props?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Props (short for properties) are a mechanism for passing data from parent to child components in React. They are read-only and help make your components reusable and customizable.
+
+## Using Props
+
+1. **Passing Props**: Props are passed from parent components to child components as attributes.
+   ```jsx
+   // ParentComponent.js
+   import ChildComponent from './ChildComponent';
+
+   function ParentComponent() {
+     return <ChildComponent name="John" age={30} />;
+   }
