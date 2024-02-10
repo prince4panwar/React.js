@@ -40,16 +40,12 @@ Make sure you have Node.js and npm installed on your machine. You can download a
 
 Clone this repository to your local machine:
 
-```bash
 cd my-react-app
 
-```bash
 npm install
 
-```bash
 npm start
 
-```bash
 npm run build
 
 
