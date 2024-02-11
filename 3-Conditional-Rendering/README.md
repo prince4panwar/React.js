@@ -1,8 +1,20 @@
-# React + Vite
+# Conditional Rendering in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Conditional rendering in React allows you to dynamically render different content or components based on certain conditions. This is a powerful feature that enables you to create more interactive and responsive user interfaces.
 
-Currently, two official plugins are available:
+## Using Conditional Rendering
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+There are several ways to perform conditional rendering in React:
+
+### Using if-else Statements
+
+You can use traditional JavaScript if-else statements directly within your JSX code to conditionally render components or content.
+
+```jsx
+function Greeting({ isLoggedIn }) {
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  } else {
+    return <GuestGreeting />;
+  }
+}
