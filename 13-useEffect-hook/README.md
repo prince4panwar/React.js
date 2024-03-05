@@ -1,8 +1,16 @@
-# React + Vite
+# Understanding the useEffect Hook in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In React, `useEffect` is a built-in hook that allows you to perform side effects in functional components. Side effects might include data fetching, subscriptions, or manually changing the DOM.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The primary purpose of `useEffect` is to manage side effects in your components. It serves as a replacement for lifecycle methods like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in class components.
+
+## Basic Syntax
+
+The `useEffect` hook takes two arguments: a function and an optional array of dependencies.
+
+```javascript
+useEffect(() => {
+  // Side effect code goes here
+}, [dependencies]);
